@@ -1,107 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Josebeco</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div id="nav" class="pl-4 h-14 text-2xl flex justify-start gap-3  items-center">
-    
-      <div id="navImg" class="p-1 h-10  flex flex-row gap-1">
-        <img src="img/papagaio.webp" class="h-8" alt="..." />
-        <a>Josebeco</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josebeco</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <div id="nav" class="pl-4 h-14 text-2xl flex justify-start gap-7  items-center">
+
+    <div id="navImg" class="p-1 h-10  flex flex-row gap-1">
+      <img src="img/papagaio.webp" class="h-8" alt="..." />
+      <a>Josebeco</a>
+    </div>
+    <div>
+      <a href="#s1">Jogos</a>
+    </div>
+    <div>
+      <a href="#s2">Mande uma mensagem</a>
+    </div>
+  </div>
+
+
+  <section id="s1">
+
+    <div class="flex justify-center">
+      <div id="controls-carousel" class="w-200 pt-7" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-140 overflow-hidden">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out " data-carousel-item>
+            <div id="cardSteam">
+              <img class="w-full" src="img/tf2.jpg" style="border-top-left-radius: 30px;border-top-right-radius: 30px;"
+                alt="" />
+              <div class="p-4 text-center">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Team Fortress 2</h5>
+                <p class="mb-3 font-normal text-white">
+                  Um clássico, sendo o primeiro "hero shooter" e insubstituível</p>
+                <a href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank"
+                  class="inline-flex items-center px-3 py-2 text-sm font-bold  text-center text-white bg-red-700 rounded-full hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  Página Steam
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out " data-carousel-item>
+            <div id="cardSteam">
+              <img class="w-full" src="img/caminhao.jpg"
+                style="border-top-left-radius: 30px;border-top-right-radius: 30px;" alt="" />
+              <div class="p-4 text-center">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Euro Truck Simulator 2</h5>
+                <p class="mb-3 font-normal text-white">
+                  Leve cargas de um lado para outro e tenha a real experiência de um caminhoneiro</p>
+                <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/" target="_blank"
+                  class="inline-flex items-center px-3 py-2 text-sm font-bold  text-center text-white bg-red-700 rounded-full hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  Página Steam
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out " data-carousel-item>
+            <div id="cardSteam">
+              <img class="w-full" src="img/drift.jpg"
+                style="border-top-left-radius: 30px;border-top-right-radius: 30px;" alt="" />
+              <div class="p-4 text-center">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Inertial drift</h5>
+                <p class="mb-3 font-normal text-white">
+                  Um jogo de corrida arcade no qual você usa os dois analógicos para controlar seu carro</p>
+                <a href="https://store.steampowered.com/app/1184480/Inertial_Drift/" target="_blank"
+                  class="inline-flex items-center px-3 py-2 text-sm font-bold  text-center text-white bg-red-700 rounded-full hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  Página Steam
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider controls -->
+
+        <button type="button"
+          class="absolute  top-0 start-0 z-30  flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+            <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center  h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+            <svg class="w-4 h-4 text-white d rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
       </div>
-      <div>
-        <a href="#s1">Jogos</a>
-      </div>
-      <div>
-        <a href="#s2">Mande uma mensagem</a>
+
+
+
+
+    </div>
+  </section>
+
+
+  <section id="s2" class="flex justify-center pt-5 bg-">
+    <div class="w-full max-w-sm p-4 0  shadow-sm sm:p-6 md:p-8 bg-gray-800" id="enviarForm">
+      <form class="space-y-6" action="#">
+        <h5 class="text-xl font-bold text-white">Envie sua mensagem</h5>
+        <div>
+          <label for="email" class="block mb-2 text-sm font-medium text-white">Seu email</label>
+          <input type="email" name="email" id="email"
+            class=" border  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
+            placeholder="nome@empresa.com" required />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 text-sm font-medium  text-white">Sua mensagem</label>
+          <textarea id="message" rows="6"
+            class="block p-2.5 w-full text-sm  rounded-lg border  focus:ring-blue-500 focus:border-blue-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit" data-popover-target="popover-submit" type="button"
+          class="w-full text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg  px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Enviar</button>
+      </form>
+
+      <div data-popover id="popover-submit" role="tooltip"
+        class="absolute z-10 invisible inline-block w-64 text-sm  transition-opacity duration-300  border  rounded-lg shadow-xs opacity-0 text-white border-gray-400 bg-gray-800">
+        <div class="px-3 py-2 flex justify-center">
+          <p>Verifique antes de enviar</p>
+        </div>
+        <div data-popper-arrow></div>
       </div>
     </div>
-
-    <section id="s1">
-
-
-       <!--HTML CODE-->
-<div class="w-full relative">
-  <div class="swiper default-carousel swiper-container">
-  <div class="swiper-wrapper">
-
-   <div class="swiper-slide">
-     <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-  
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="img/tf2.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-        </div>
-      </div>
-
-     </div>
-   </div>
-
-   <div class="swiper-slide">
-     <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-       <span class="text-3xl font-semibold text-indigo-600">Slide 2 </span>
-     </div>
-   </div>
-
-   <div class="swiper-slide">
-     <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-       <span class="text-3xl font-semibold text-indigo-600">Slide 3 </span>
-     </div>
-   </div>
-
-  </div>
-  <div class="flex items-center gap-8 lg:justify-start justify-center">
-   <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 hover:bg-indigo-600 " data-carousel-prev>
-     <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-       <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-     </svg>
-   </button>
-   <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5 hover:bg-indigo-600" data-carousel-next>
-     <svg class="h-5 w-5 text-indigo-600 group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-       <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-     </svg>
-   </button>
-  </div>
-  </div>
-  </div>
-  
-
-    </section>
-
-    <section id="s2">
+  </section>
 
 
-    </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".default-carousel", {
-      loop: true,
-      pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      },
-      navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-      },
-      });
-      </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+
 </html>

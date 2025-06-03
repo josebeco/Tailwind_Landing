@@ -10,15 +10,21 @@
     font-weight: bold;
 }
 
-.swiper-wrapper {
-    width: 100%;
-    height: max-content !important;
-    padding-bottom: 64px !important;
-    -webkit-transition-timing-function: linear !important;
-    transition-timing-function: linear !important;
-    position: relative;
-    }
-    .swiper-pagination-bullet {
-    background: #4f46e5;
-    }
+#s1{
+    background: radial-gradient(circle, rgba(117, 117, 117, 1) 0%, rgba(5, 0, 0, 1) 100%, rgba(74, 74, 74, 1) 100%);
+}
 
+#s2{
+      background-color: #303030;
+}
+
+#enviarForm{
+    border-radius: 30px;
+    border-color: black;
+    border-width: 3px;
+}
+
+#cardSteam{
+    background-color: #303030;
+    border-radius: 30px;
+}
